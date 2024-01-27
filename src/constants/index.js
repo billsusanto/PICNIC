@@ -23,17 +23,23 @@ const picnic = [
   {
     title: "Diamond Jamboree Plaza",
     icon: diamond_jamboree_plaza,
-    back: "McDonald's, Panda Express"
+    address: "2750 Alton Pkwy, Irvine, CA 92606",
+    pickup: "Pickup: 10:00AM",
+    distance: "3.2 miles"
   },
   {
     title: "University Town Center",
     icon: utc,
-    back: "In n Out, Papa Johns"
+    address: "4255 Campus Drive. Irvine, CA 92612",
+    pickup: "Pickup: 10:00AM",
+    distance: "0.2 miles"
   },
   {
     title: "Main Street Plaza",
     icon: msp,
-    back: "Shake Shack, KFC"
+    address: "2540 Main St, Irvine, CA 92614",
+    pickup: "Pickup: 10:00AM",
+    distance: "3.4 miles"
   }
 ];
 
