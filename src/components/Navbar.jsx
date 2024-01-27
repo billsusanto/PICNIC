@@ -16,14 +16,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-opacity-50`}>
+    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed bottom-0 z-20 bg-opacity-50`}>
       <div className='w-full flex justify-between items-center max-w-7x1 mx-auto'>
         <Link to="/" className='flex items-center gap-2' onClick={() => {
           setActive("");
           window.scrollTo(0,0);
         }}>
-          <p className='text-white text-[18px] font-karla cursor-pointer flex'>
-            BILL SUSANTO
+          <p className='text-black text-[18px] font-karla cursor-pointer flex'>
+            PICNIC
           </p>
         </Link>
 
@@ -31,14 +31,14 @@ const Navbar = () => {
           {navLinks.map((Link) => (
             <li
               key={Link.id}
-              className={`${active === Link.title ? "text-white" : "text-white"} hover:text-white text-[15px] font-karla cursor-pointer`}
+              className={`${active === Link.title ? "text-black" : "text-black"} hover:text-white text-[15px] font-karla cursor-pointer`}
               onClick={() => setActive(Link.title)}
             >
               {Link.id === "billybot" ? (
-                <a href="https://billybot-iota.vercel.app/" target="_blank" rel="noopener noreferrer">Billybot</a>
+                <a href="https://billybot-iota.vercel.app/" target="_blank" rel="noopener noreferrer">Home</a>
               ) :
               Link.id === "resume" ? (
-                <a href="https://drive.google.com/file/d/1RfRfblU9LEnb7wrLCY31gCEYKdUwi0qU/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                <a href="https://drive.google.com/file/d/1RfRfblU9LEnb7wrLCY31gCEYKdUwi0qU/view?usp=sharing" target="_blank" rel="noopener noreferrer">Search</a>
               ) : (
                 <a href={`#${Link.id}`}>{Link.title}</a>
               )}
@@ -76,7 +76,6 @@ const Navbar = () => {
                   ) : (
                     <a href={`#${Link.id}`}>{Link.title}</a>
                   )}
-                  {/* <a href={`#${Link.id}`}>{Link.title}</a> */}
                 </li>
               ))}
             </ul>
