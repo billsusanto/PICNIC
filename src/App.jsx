@@ -35,7 +35,7 @@ const RoutesWithBottomNavBar = () => {
 
   return (
     <>
-      <Routes className="relative z-0 bg-white">
+      <Routes>
         <Route path="/" element={<Landing/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signup" element={<Signup/>} />
@@ -46,7 +46,7 @@ const RoutesWithBottomNavBar = () => {
         <Route path="/menus" element={<Menus />} />
         <Route path="/order" element={<Order />} />
       </Routes>
-      {showBottomNavBar && <BottomNavBar className="bottom-navbar"/>}
+      {showBottomNavBar && <BottomNavBar />}
     </>
   );
 };

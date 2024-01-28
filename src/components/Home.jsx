@@ -37,27 +37,8 @@ const PicnicCard = ({ title, icon, address, pickup, distance }) => {
 };
 
 const Home = () => {
-  const [picnics, setPicnics] = useState([]); // State to hold picnic data
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/api/picnics'); // Adjust this URL to your Flask endpoint
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        setPicnics(data); // Set the picnic data in state
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    fetchData();
-  }, []); // Empty dependency array means this effect runs once on mount
-
   return (
-    <div id="Home" className="mt-20 mx-auto w-4/5 min-h-screen bg-cover bg-no-repeat bg-center rounded-2xl space-y-5">
+    <div id="Home" className="mx-auto w-4/5 pb-30">
       <div className="w-full flex flex-col justify-end">
 
           <h2 className="xs:text-[30px] sm:text-[40px] md:text-[50px] xl:text-[60px] text-[30px] nunito-regular">

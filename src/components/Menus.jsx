@@ -68,7 +68,7 @@ const MenusCard = ({ name, icon, price, description}) => {
 
 const Menus = () => {
     return (
-        <div id="menus" className="mt-20 mx-auto w-4/5 min-h-screen bg-cover bg-no-repeat bg-center rounded-2xl space-y-5">
+        <div id="menus" className="mt-5 mx-auto w-4/5 min-h-screen bg-cover bg-no-repeat bg-center rounded-2xl space-y-5">
             <div className="w-100% h-[35px] flex justify-between items-center">
                 <Link to="/restaurants">
                     <BackIcon />

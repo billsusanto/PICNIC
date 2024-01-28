@@ -38,7 +38,7 @@ const RestaurantCard = ({ title, icon, address, pickup, distance }) => {
 
 const Restaurants = () => {
     return (
-        <div id="Restaurants" className="mt-20 mx-auto w-4/5 min-h-screen bg-cover bg-no-repeat bg-center rounded-2xl space-y-5">
+        <div id="Restaurants" className="mx-auto w-4/5 pb-60">
           <div className="w-full flex flex-col justify-end">
     
               <h2 className="xs:text-[30px] sm:text-[40px] md:text-[50px] xl:text-[60px] text-[30px] nunito-regular">

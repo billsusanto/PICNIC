@@ -149,7 +149,7 @@ const menus = [
     name: "Bibimbap",
     icon: bbb,
     price: "$22.49",
-    description: "Mixed rice with vegetables"
+    description: "Mixed rice"
   },
 ]
 
