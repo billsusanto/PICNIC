@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root {
+    --text: #283618;
+    --primary: #606C38;
+    font-family: "Quicksand";
+}
+
+h2 {
+    font-family:  "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+}
+
+.header {
+    width: 100%;
+    padding: .3em;
+}
+
+.op-60 {
+    opacity: 60%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9375rem;
+
+}
+
+.section {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.46875rem;
+
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.divider {
+    border-top: 3px solid #b0b0b0; 
+    margin: 10px 0; 
+    width: 100%;
+}
+
+.mini-div {
+    border-top: 1.0px solid #b0b0b0;
+    width: 100%;
+    margin: 10px 0;
+    opacity: 80%;
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    padding-right: .25em;
+}
+.small-button {
+    display: flex;
+    opacity: 60%;
+    padding: 0.3125rem 0.625rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+
+    border-radius: 0.625rem;
+    background: var(--primary);
+    color: white;
+}
+
+.confirm-button {
+
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+}
+
+.primary-button {
+    display: flex;
+    width: 75%;
+    padding: 0.25rem 7.0625rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.625rem;
+
+    border-radius: 0.625rem;
+    background: var(--Primary, #606C38);
+
+    color: white;
+}
+
+.primary-button:active{
+    opacity: 60%;
+}
+
+#green {
+    opacity: 100%;
+    color: rgb(25, 99, 25);
+}
+
+#red {
+    color: red;
+}

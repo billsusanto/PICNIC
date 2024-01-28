@@ -1,4 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+h2 {
+    font-family:  "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.5rem;
+}
 
 @tailwind base;
 @tailwind components;
@@ -85,5 +97,296 @@ body {
 }
 
 .bg-gray {
-  background-color: #fefae0;
+  background-color: #d3d3d3;
+}
+
+.quicksand-bold {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.nunito-regular {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+.bottom-navbar {
+  position: fixed; /* Fixed position */
+  left: 0; /* Align to the left */
+  right: 0; /* Align to the right */
+  bottom: 0; /* Stick to the bottom */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.line {
+  border-bottom: 2px solid #b0b0b0; /* Solid line of 2px thickness */
+  padding-bottom: 10px; /* Space between line and text */
+}
+
+.text-grey {
+  color: grey
+}
+
+.text-light-grey {
+  color: lightgrey
+}
+
+.text-dark-grey {
+  color: darkgray
+}
+
+.card-bg {
+  background: linear-gradient(to bottom, #606C38 0%, #606C38 30%, #dbee9e 30%, #dbee9e 100%);
+}
+
+.basket {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.background {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  top: 23%; /* Adjust as needed to position in the top two-thirds */
+  color: #283618;
+  padding: 20px;
+}
+
+/* Flex container to center the button */
+.center-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+/* Style for the buttons */
+.primary-btn {
+  width: 100%;
+  background-color: #606c38;
+  color: white;
+  font-family: 'Nunito';
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.primary-btn:active {
+  border-color: #606c38;
+  color: #606c38;
+  background-color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #606c38;
+  color: #606c38;
+  width: 100%;
+  background-color: white;
+  font-family: 'Nunito';
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.secondary-btn:active {
+  background-color: #606c38;
+  color: white;
+}
+
+.form-container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  max-width: 400px; /* Max width of the form */
+  margin: auto; /* Center the form */
+}
+
+.form-group {
+  margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-control {
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding inside the input */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 10px; /* Space below each input */
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #4A90E2; /* Highlight color when focused */
+}
+
+input[type="email"],
+input[type="password"] {
+  font-size: 16px; /* Increase font size */
+  line-height: 20px; /* Adjust line height */
+}
+
+.create-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-button {
+  padding: 10px 90px;
+  background-color: #606c38;
+  color: white;
+  font-family: 'Nunito';
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-family: 'Nunito';
+  color: #999;
+}
+
+.form-label {
+  display: block;
+  font-size: 2.0em;
+  font-family: 'Nunito';
+  padding: 10px;
+}
+
+input {
+  font-family: 'Nunito';
+  border-radius: 10px;
+}
+
+:root {
+  --text: #283618;
+  --primary: #606C38;
+  font-family: "Quicksand";
+}
+
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
+
+.header {
+  width: 100%;
+  padding: .3em;
+}
+
+.op-60 {
+  opacity: 60%;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.9375rem;
+
+}
+
+.section {
+  width:90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.46875rem;
+
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.divider {
+  border-top: 3px solid #b0b0b0; 
+  margin: 10px 0; 
+  width: 100%;
+}
+
+.mini-div {
+  border-top: 1.0px solid #b0b0b0;
+  width: 100%;
+  margin: 10px 0;
+  opacity: 80%;
+}
+
+.payment-method {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  padding-right: .25em;
+}
+.small-button {
+  display: flex;
+  opacity: 60%;
+  padding: 0.3125rem 0.625rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem;
+
+  border-radius: 0.625rem;
+  background: var(--primary);
+  color: white;
+}
+
+.confirm-button {
+
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+
+}
+
+.order-button {
+  display: flex;
+  width: 75%;
+  padding: 0.25rem 7.0625rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.625rem;
+
+  border-radius: 0.625rem;
+  background: var(--Primary, #606C38);
+
+  color: white;
+}
+
+.primary-button:active{
+  opacity: 60%;
+}
+
+#green {
+  opacity: 100%;
+  color: rgb(25, 99, 25);
+}
+
+#red {
+  color: red;
 }
